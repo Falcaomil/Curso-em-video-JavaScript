@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pais</title>
+</head>
+<body>
+    <h1>Veja aqui se você e Brasileiro ou estrangeiro</h1>
+    <label for="pais">Qual seu pais</label>
+    <input type="text" name="pais" id="pais" placeholder="Pais">
+    <input type="button" value="verificar" onclick="verifi()">
+    <div id="aqui">
+
+    </div>
+    <script>
+    function verifi(){
+        var caixa = document.querySelector('input#pais').value.toLowerCase()
+        var aqui = document.querySelector('div#aqui')
+        var vel = Number(caixa.value)
+        res.innerHTML= 'Voce e '
+        if (caixa == Brasil){
+            res.innerHTML = 'e voce braisleiro'
+
+        }
+
+    }
+    </script>
+</body>
+</html>

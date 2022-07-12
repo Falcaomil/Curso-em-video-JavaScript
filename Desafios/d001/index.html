@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 1</title>
+    <style>
+        body{
+            background-color: rgba(0, 0, 0, 0.698);
+        }
+        h1{
+            color: white;
+        }
+        input{
+            font: Normal 15pt Arial;
+            padding: 30px;
+            margin-right: 5px;
+            color: blue;
+
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Desafio das mensagens</h1>
+    
+    <input type="button" value="Botão 1" onclick="'Botao 1'()" >
+    <input type="button" value="Botão 2" onclick="'Botao 2'()" class="botao2">
+    <input type="button" value="Botão 3" onclick="'Botao 3'()" id="botao3">
+   
+
+    <script>
+        //variaveis que ira pegar TAG  /  CLASS  // ID
+        var a = document.getElementsByTagName('input')[0]
+        var b = document.getElementsByClassName('botao2')[0]
+        var c = document.getElementById('botao3')
+
+       // var a = document.getElementById('botao1')
+       // var b = document.getElementById('botao2')
+        //evento que a variavel ira fazer
+        a.addEventListener('click', clicar)
+        b.addEventListener('click', clicar2)
+        c.addEventListener('click', clicar3)
+
+        function clicar (){
+           alert('Voce clicou no botao 1º')
+        }
+        function clicar2 (){
+            alert('Voce clicou no botao 2º')
+        }
+        function clicar3 (){
+            alert('Voce clicou no botao 3º')
+        }
+    </script>
+</body>
+</html>
